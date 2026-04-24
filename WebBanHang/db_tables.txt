@@ -1,0 +1,25 @@
+Database Tables:
+ThongBao
+YeuCauDoiTra
+HinhAnhDanhGia
+sysdiagrams
+__EFMigrationsHistory
+AspNetRoles
+CongTy
+DonDatHang
+LoaiSanPham
+Tinh
+AspNetRoleClaims
+SanPham
+XaPhuong
+ChiTietDonHang
+AspNetUsers
+AspNetUserClaims
+AspNetUserLogins
+AspNetUserRoles
+AspNetUserTokens
+ChiTietGioHang
+ChatSessions
+ChatMessages
+ThanhToan
+DanhGiaSanPham

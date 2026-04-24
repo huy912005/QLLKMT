@@ -1,0 +1,94 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--glass-border);
+}
+
+.headerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.logo h1 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--text-dark);
+}
+
+.accent {
+  color: var(--primary-color);
+}
+
+.searchBar {
+  flex: 1;
+  max-width: 500px;
+  display: flex;
+  align-items: center;
+  background: white;
+  border-radius: 999px;
+  padding: 0.5rem 1rem;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.searchBar input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 0.95rem;
+  background: transparent;
+}
+
+.searchBtn {
+  background: none;
+  border: none;
+  color: var(--text-light);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: color 0.2s;
+}
+
+.searchBtn:hover {
+  color: var(--primary-color);
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.actionBtn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--text-dark);
+  transition: color 0.2s;
+}
+
+.actionBtn:hover {
+  color: var(--primary-color);
+}
+
+.cartIconWrapper {
+  position: relative;
+}
+
+.cartBadge {
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  background: #ef4444;
+  color: white;
+  font-size: 0.7rem;
+  font-weight: bold;
+  padding: 0.1rem 0.4rem;
+  border-radius: 99px;
+}

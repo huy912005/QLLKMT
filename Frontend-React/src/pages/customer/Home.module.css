@@ -1,0 +1,77 @@
+.title {
+  font-size: 1.8rem;
+  font-weight: 800;
+  margin-bottom: 2rem;
+  color: var(--text-dark);
+}
+
+.productGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.productCard {
+  border-radius: 16px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.productCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.imagePlaceholder {
+  height: 200px;
+  background: #e2e8f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-light);
+  font-weight: 500;
+}
+
+.productInfo {
+  padding: 1.5rem;
+}
+
+.category {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--primary-color);
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.productName {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: var(--text-dark);
+}
+
+.price {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #ef4444; /* Màu đỏ cho giá để chói lóa như TGDD */
+  margin-bottom: 1.5rem;
+}
+
+.buyBtn {
+  width: 100%;
+  padding: 0.8rem;
+  background: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.buyBtn:hover {
+  background: var(--primary-dark);
+}

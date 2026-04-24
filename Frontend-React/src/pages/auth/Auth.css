@@ -1,0 +1,302 @@
+/* Auth.css - Bootstrap Style + Màu cam WEBNC */
+
+/* Wrapper chứa toàn bộ */
+.auth-wrapper {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f9fa;
+    padding: 15px;
+}
+
+/* Card chính */
+.auth-card {
+    max-width: 1000px;
+    width: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* Ảnh nền bên trái - Login */
+.login-image {
+    background: url('/images/background_login.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 550px;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    display: flex !important;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding: 40px 35px;
+    color: white;
+}
+
+.login-image h3 {
+    display: none;
+}
+
+.login-image p {
+    display: none;
+}
+
+/* Ảnh nền bên trái - Register */
+.register-image {
+    background: url('/images/background_register.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 550px;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    display: flex !important;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding: 40px 35px;
+    color: white;
+}
+
+.register-image h3 {
+    display: none;
+}
+
+.register-image p {
+    display: none;
+}
+
+/* Form wrapper */
+.form-wrapper {
+    padding: 40px 35px;
+    background: white;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    min-height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-wrapper h2 {
+    color: #FF9500;
+    font-weight: 700;
+    margin-bottom: 30px;
+    font-size: 1.8rem;
+}
+
+/* Floating label custom */
+.form-floating > .form-control {
+    background-color: #f0f1f3;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    padding: 1rem 0.75rem 0.5rem 0.75rem;
+    transition: all 0.3s ease;
+    font-size: 0.95rem;
+}
+
+.form-floating > .form-control::placeholder {
+    color: transparent;
+}
+
+.form-floating > .form-control:focus {
+    background-color: white;
+    border-color: #FF9500;
+    box-shadow: 0 0 0 0.2rem rgba(255, 149, 0, 0.15);
+    outline: none;
+}
+
+.form-floating > label {
+    color: #888;
+    font-weight: 500;
+    padding-left: 0.75rem;
+    font-size: 0.95rem;
+}
+
+.form-floating > .form-control:focus ~ label,
+.form-floating > .form-control:not(:placeholder-shown) ~ label {
+    color: #FF9500;
+}
+
+/* Button style */
+.btn-primary {
+    background-color: #FF9500;
+    border: none;
+    font-weight: 600;
+    padding: 12px 24px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #E68900;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(255, 149, 0, 0.2);
+}
+
+.btn-primary:active {
+    background-color: #CC7700;
+    transform: translateY(0);
+}
+
+.btn-primary:disabled {
+    background-color: #ccc;
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+.btn-lg {
+    font-size: 1rem;
+}
+
+/* Form check - Remember me */
+.form-check-input {
+    border-color: #dee2e6;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.form-check-input:checked {
+    background-color: #FF9500;
+    border-color: #FF9500;
+}
+
+.form-check-input:focus {
+    border-color: #FF9500;
+    box-shadow: 0 0 0 0.2rem rgba(255, 149, 0, 0.15);
+}
+
+.form-check-label {
+    color: #666;
+    font-weight: 500;
+    cursor: pointer;
+    margin-bottom: 0;
+}
+
+/* Links */
+a {
+    color: #FF9500;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    color: #E68900;
+    text-decoration: underline;
+}
+
+.text-center p {
+    margin-bottom: 0.5rem;
+    color: #666;
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+.text-center p a {
+    font-weight: 700;
+}
+
+.text-center p a:hover {
+    text-decoration: underline;
+}
+
+/* Error message */
+.alert {
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.alert-danger {
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    color: #721c24;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+    color: #155724;
+}
+
+/* Invalid feedback */
+.invalid-feedback {
+    display: block;
+    color: #dc3545;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+    margin-left: 0;
+}
+
+.form-control.is-invalid {
+    border-color: #dc3545;
+    background-color: #fef5f5;
+}
+
+.form-control.is-invalid:focus {
+    border-color: #dc3545;
+    box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.15);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .login-image,
+    .register-image {
+        display: none !important;
+    }
+
+    .auth-card {
+        max-width: 100%;
+    }
+
+    .row > div:last-child {
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+    }
+
+    .form-wrapper {
+        min-height: auto;
+        padding: 30px 20px;
+        border-radius: 12px;
+    }
+
+    .auth-card {
+        margin-top: 20px;
+    }
+
+    .form-wrapper h2 {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+
+    .btn-primary {
+        width: 100%;
+    }
+
+    .form-floating > .form-control {
+        padding: 0.8rem 0.6rem 0.4rem 0.6rem;
+        font-size: 0.9rem;
+    }
+
+    .form-floating > label {
+        padding-left: 0.6rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .auth-wrapper {
+        padding: 10px;
+    }
+
+    .form-wrapper {
+        padding: 20px 15px;
+    }
+
+    .form-wrapper h2 {
+        font-size: 1.3rem;
+        margin-bottom: 15px;
+    }
+}

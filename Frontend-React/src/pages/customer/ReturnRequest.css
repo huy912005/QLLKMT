@@ -1,0 +1,38 @@
+.return-request-page {
+  background-color: #fffafb;
+  min-height: 100vh;
+}
+
+.order-summary-mini {
+  border: 1px solid #eee;
+}
+
+.line-clamp-1 {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.smaller {
+  font-size: 0.8rem;
+}
+
+.last-no-border:last-child {
+  border-bottom: none !important;
+}
+
+.form-control:focus {
+  border-color: #f56565;
+  box-shadow: 0 0 0 0.25rem rgba(245, 101, 101, 0.1);
+}
+
+.btn-danger {
+  background: linear-gradient(135deg, #f56565 0%, #c53030 100%);
+  border: none;
+}
+
+.btn-danger:hover {
+  background: linear-gradient(135deg, #c53030 0%, #f56565 100%);
+  transform: translateY(-2px);
+}
